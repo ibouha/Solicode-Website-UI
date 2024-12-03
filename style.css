@@ -208,118 +208,201 @@ section {
   transition-property: clip-path;
 }
 
+/* styling our values section */
 
 /* Hexagon Section */
 .hexagon-section {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  position: relative;
+}
+.hexagon-section h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  margin-top: 5px;
+}
+.hexagon-section h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
 
-  }
-  
-  .hexagon-container {
-    position: relative;
-    width: 500px; /* Increase the container size */
-    height: 500px;
-  }
-  
-  .hexagons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: spin 10s linear infinite; /* Add spinning animation */
-  }
-  
-  /* Define larger hexagon sizes */
-  .hexagon {
-    position: absolute;
-    width: 130px; /* Increased width */
-    height: 130px; /* Increased height */
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    text-align: center;
-    padding: 5px;
-    color: #000;
-    background: #fff;
-    border: 3px solid black; /* Ensure full black border */
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .hexagon span {
-    z-index: 1;
-    pointer-events: none;
-  }
-  
-  /* Blue Hexagon */
-  .hexagon.blue {
-    background: #1a73e8;
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .hexagon.blue img {
-    width: 80%; /* Adjust logo size for the larger hexagon */
-    margin-top: 7px;
-  }
-  
-  /* Hover Effect */
-  .hexagon:hover {
-    transform: scale(1.1);
-    background: #1a73e8;
-    color: #fff;
-  }
-  
-  /* Position white hexagons around the blue hexagon */
-  .hexagon:nth-child(2) {
-    transform: translate(-200px, -120px); /* Adjust for new size */
-  }
-  
-  .hexagon:nth-child(3) {
-    transform: translate(0, -240px);
-  }
-  
-  .hexagon:nth-child(4) {
-    transform: translate(200px, -120px);
-  }
-  
-  .hexagon:nth-child(5) {
-    transform: translate(-200px, 120px);
-  }
-  
-  .hexagon:nth-child(6) {
-    transform: translate(0, 240px);
-  }
-  
-  .hexagon:nth-child(7) {
-    transform: translate(200px, 120px);
-  }
-  
+.hexagon-container {
+  position: relative;
+  width: 500px; /* Increase the container size */
+  height: 500px;
+}
 
-  
-  /* Text Section */
-  .hexagon-text {
-    max-width: 40%;
-    position: absolute;
-    left: 58%;
-    top: 53%;
+.hexagons {
+  position: absolute;
+  top: 50%;
+  left: -25%;
+  transform: translate(-50%, -50%);
+  animation: spin 10s linear infinite; /* Add spinning animation */
+}
 
-  }
-  
-  .hexagon-text h3 {
-    font-size: 1.9em;
-    margin-bottom: 15px;
-    color: #2696e9;
-  }
-  
-  .hexagon-text p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #555;
-  }
-  
+/* Define larger hexagon sizes */
+.hexagon {
+  position: absolute;
+  width: 130px; /* Increased width */
+  height: 130px; /* Increased height */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+  padding: 5px;
+  color: #000;
+  background: #fff;
+  border: 3px solid black; /* Ensure full black border */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hexagon span {
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Blue Hexagon */
+.hexagon.blue {
+  background: #1a73e8;
+  color: #fff;
+  font-weight: bold;
+}
+
+.hexagon.blue img {
+  width: 80%; /* Adjust logo size for the larger hexagon */
+  margin-top: 7px;
+}
+
+/* Hover Effect */
+.hexagon:hover {
+  transform: scale(1.1);
+  background: #1a73e8;
+  color: #fff;
+}
+
+/* Position white hexagons around the blue hexagon */
+.hexagon:nth-child(2) {
+  transform: translate(-200px, -120px); /* Adjust for new size */
+}
+
+.hexagon:nth-child(3) {
+  transform: translate(0, -240px);
+}
+
+.hexagon:nth-child(4) {
+  transform: translate(200px, -120px);
+}
+
+.hexagon:nth-child(5) {
+  transform: translate(-200px, 120px);
+}
+
+.hexagon:nth-child(6) {
+  transform: translate(0, 240px);
+}
+
+.hexagon:nth-child(7) {
+  transform: translate(200px, 120px);
+}
+
+/* Text Section */
+.hexagon-text {
+  max-width: 30%;
+  position: absolute;
+  left: 58%;
+  top: 53%;
+}
+
+.hexagon-text h3 {
+  font-size: 1.9em;
+  margin-bottom: 15px;
+  color: #2696e9;
+}
+
+.hexagon-text p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* styling QUI NOUS SOMMES section */
+
+.section-sommes {
+  width: 100%;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 45px auto;
+}
+.text-area {
+  width: 50%;
+}
+.text-area h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 5px;
+  background-color: black;
+  margin-top: 5px;
+}
+
+.text-area h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.text-area p {
+  font-weight: 400;
+  margin: 30px auto;
+  line-height: 1.5rem;
+}
+.text-area button {
+  width: 180px;
+  height: 50px;
+  background-color: #f3b605;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.text-area button img {
+  width: 35px;
+  height: 49px;
+  background-color: white;
+  outline: 1px solid;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.images {
+  background-color: rgb(255, 231, 20);
+  width: 36%;
+  height: 420px;
+  border-radius: 20px;
+  rotate: 16deg;
+  margin: auto 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.images img {
+  width: 90%;
+  height: 350%;
+  border-radius: 27px;
+  rotate: -15deg;
+}
