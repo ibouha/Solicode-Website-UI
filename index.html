@@ -39,11 +39,11 @@
       <img class="image-slide" src="./public/5.jpg" alt="" />
       <div class="content">
         <h1>Inscription 2024-2025</h1>
-          <p>
-            Vous avez entre 18 et 35 ans?<br />
-            Vous êtes motivé, passionné par les technologies digitales?<br />
-            maintenant!
-          </p>
+        <p>
+          Vous avez entre 18 et 35 ans?<br />
+          Vous êtes motivé, passionné par les technologies digitales?<br />
+          maintenant!
+        </p>
         <a href="#">JE M'INSCRIS!</a>
       </div>
 
@@ -55,8 +55,43 @@
         <div class="nav-btn"></div>
       </div>
     </section>
+    <article>
+      <div class="boxes">
+        <div class="box">
+          <div class="icon">
+            <img src="public/graduationcap-1@2x.png" />
+          </div>
+          <div class="text">
+            <p>43</p>
+            <h4>Lauréats</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><img src="public/medal-1@2x.png" /></div>
+          <div class="text">
+            <p>2</p>
+            <h4>Filières</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon">
+            <img src="public/multipleuserssilhouette-1@2x.png" />
+          </div>
 
-    <main></main>
+          <div class="text">
+            <p>12</p>
+            <h4>Staff</h4>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><img src="public/keyboard-1@2x.png" /></div>
+          <div class="text">
+            <p>120</p>
+            <h4>Places</h4>
+          </div>
+        </div>
+      </div>
+    </article>
     <script>
       //Javacript for video slider navigation
       const btns = document.querySelectorAll(".nav-btn");
@@ -70,7 +105,6 @@
         });
         btns[manual].classList.add("active");
         slides[manual].classList.add("active");
-
       };
       btns.forEach((btn, i) => {
         btn.addEventListener("click", () => {

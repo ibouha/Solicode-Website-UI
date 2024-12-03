@@ -36,7 +36,6 @@ html {
 body {
   background: var(--white);
   margin: auto;
-  overflow: hidden;
 }
 
 /* styling header section */
@@ -201,8 +200,63 @@ section {
   width: 100%;
   clip-path: circle(0% at 0 50%);
 }
-.image-slide.active{
+.image-slide.active {
   clip-path: circle(150% at 0 50%);
   transition: 2s ease;
   transition-property: clip-path;
+}
+article {
+  height: 386px;
+  width: 100%;
+  background-image: url("public/chiffres@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+}
+.boxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.box {
+  width: 223px;
+  height: 148px;
+  background-color: #fff;
+  margin: 0 10px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text h4 {
+  width: 78px;
+  height: 27px;
+  color: #1680ac;
+}
+.box img {
+  width: 52px;
+  height: 56px;
+}
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+.text p {
+  width: 21px;
+  height: 39px;
+  font-weight: bold;
+}
+.icon {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
