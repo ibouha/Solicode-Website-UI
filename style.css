@@ -209,40 +209,44 @@ section {
 }
 
 
+/* Hexagon Section */
 .hexagon-section {
     display: flex;
     align-items: center;
     gap: 80px;
+    position: relative;
+
   }
   
   .hexagon-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 500px; /* Increase the container size */
+    height: 500px;
   }
-  .hexagons{
-    position: absolute;
-    top: 150px;
-    left: 37%;
-  }
-
   
+  .hexagons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 10s linear infinite; /* Add spinning animation */
+  }
+  
+  /* Define larger hexagon sizes */
   .hexagon {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 130px; /* Increased width */
+    height: 130px; /* Increased height */
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     color: #000;
+    background: #fff;
+    border: 3px solid black; /* Ensure full black border */
     transition: all 0.3s ease;
     cursor: pointer;
   }
@@ -252,58 +256,65 @@ section {
     pointer-events: none;
   }
   
+  /* Blue Hexagon */
   .hexagon.blue {
     background: #1a73e8;
     color: #fff;
     font-weight: bold;
   }
-  .blue img{
-    width: 99%;
+  
+  .hexagon.blue img {
+    width: 80%; /* Adjust logo size for the larger hexagon */
     margin-top: 7px;
   }
   
-  .hexagon.white {
-    background: #fff;
-    border: 2px solid #ddd;
-    color: #000;
-  }
-  
+  /* Hover Effect */
   .hexagon:hover {
     transform: scale(1.1);
-    border-color: #1a73e8;
+    background: #1a73e8;
+    color: #fff;
   }
   
+  /* Position white hexagons around the blue hexagon */
   .hexagon:nth-child(2) {
-    transform: translate(-120px, -70px);
+    transform: translate(-200px, -120px); /* Adjust for new size */
   }
   
   .hexagon:nth-child(3) {
-    transform: translate(0, -140px);
+    transform: translate(0, -240px);
   }
   
   .hexagon:nth-child(4) {
-    transform: translate(120px, -70px);
+    transform: translate(200px, -120px);
   }
   
   .hexagon:nth-child(5) {
-    transform: translate(-120px, 70px);
+    transform: translate(-200px, 120px);
   }
   
   .hexagon:nth-child(6) {
-    transform: translate(0, 140px);
+    transform: translate(0, 240px);
   }
   
   .hexagon:nth-child(7) {
-    transform: translate(120px, 70px);
+    transform: translate(200px, 120px);
   }
   
+
+  
+  /* Text Section */
   .hexagon-text {
-    max-width: 400px;
+    max-width: 40%;
+    position: absolute;
+    left: 58%;
+    top: 53%;
+
   }
   
   .hexagon-text h3 {
-    font-size: 1.5em;
+    font-size: 1.9em;
     margin-bottom: 15px;
+    color: #2696e9;
   }
   
   .hexagon-text p {
@@ -311,3 +322,4 @@ section {
     line-height: 1.5;
     color: #555;
   }
+  
