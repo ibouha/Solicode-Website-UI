@@ -118,6 +118,13 @@ section {
   background: #2696e9;
 }
 
+.home .content {
+  z-index: 888;
+  color: #fff;
+  width: 70%;
+  margin-top: 50px;
+}
+
 .home:before {
   z-index: 777;
   content: "";
@@ -147,9 +154,9 @@ section {
   margin-bottom: 65px;
 }
 .home .content a {
-  background: #fff;
+  background: #f3b605;
   padding: 15px 35px;
-  color: #1680ac;
+  color: black;
   font-size: 1.1em;
   font-weight: 500;
   text-decoration: none;
