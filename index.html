@@ -48,58 +48,49 @@
       </div>
 
       <div class="slider-navigation">
-        <div class="nav-btn"></div>
+        <div class="nav-btn active"></div>
         <div class="nav-btn"></div>
         <div class="nav-btn"></div>
         <div class="nav-btn"></div>
         <div class="nav-btn"></div>
       </div>
     </section>
+    <section class="hexagon-section">
+        <div class="hexagon-container">
+           <div class="hexagons">
+            <div class="hexagon blue">
+                <span><img src="./public/Solicode_logo_without_slogan_for_white_BG (1).svg" alt=""></span>
+              </div>
+              <div class="hexagon white" data-text="Innovation et Créativité">
+                <span>Innovation et Créativité</span>
+              </div>
+              <div class="hexagon white" data-text="Apprentissage Continu et Adaptabilité">
+                <span>Apprentissage Continu et Adaptabilité</span>
+              </div>
+              <div class="hexagon white" data-text="Pédagogie Active">
+                <span>Pédagogie Active</span>
+              </div>
+              <div class="hexagon white" data-text="Éthique et Responsabilité">
+                <span>Éthique et Responsabilité</span>
+              </div>
+              <div class="hexagon white" data-text="Apprentissage Pratique">
+                <span>Apprentissage Pratique</span>
+              </div>
+              <div class="hexagon white" data-text="Diversité et Inclusion">
+                <span>Diversité et Inclusion</span>
+              </div>
 
-    <main></main>
-    <script>
-      //Javacript for video slider navigation
-      const btns = document.querySelectorAll(".nav-btn");
-      const slides = document.querySelectorAll(".image-slide");
-      var sliderNav = function (manual) {
-        btns.forEach((btn) => {
-          btn.classList.remove("active");
-        });
-        slides.forEach((slide) => {
-          slide.classList.remove("active");
-        });
-        btns[manual].classList.add("active");
-        slides[manual].classList.add("active");
+           </div>
+        
+        </div>
+        <div class="hexagon-text">
+          <h3 id="dynamic-title">Mettre l'accent sur un apprentissage centré sur l’étudiant</h3>
+          <p id="dynamic-description">
+            Engager les étudiants dans des projets concrets, la résolution de problèmes et une réflexion critique pour renforcer la compréhension pratique.
+          </p>
+        </div>
+      </section>
 
-      };
-      btns.forEach((btn, i) => {
-        btn.addEventListener("click", () => {
-          sliderNav(i);
-        });
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
-
-<!-- <header>
-  <nav>
-    <img class="logo" alt="" src="./public/schoolimage.jpeg" />
-    <ul>
-      <li><a href="#">ACCUEIL</a></li>
-      <li><a href="#">SOLICODE</a></li>
-      <li><a href="#">FORMATION</a></li>
-      <li><a href="#">ACTIVITÉS</a></li>
-      <li><a href="#">CONTACT</a></li>
-    </ul>
-    <a href="#">INSCRIPTION</a>
-  </nav>
-  <div class="header-content">
-    <h1>Inscription 2024-2025</h1>
-    <div>
-      <p>Vous avez entre 18 et 35 ans? Vous êtes motivé,</p>
-      <p>passionné par les technologies digitales? Inscrivez-vous</p>
-      <p>maintenant!</p>
-    </div>
-    <button>JE M'INSCRIS!</button>
-  </div>
-</header> -->

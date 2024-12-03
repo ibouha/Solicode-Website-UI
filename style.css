@@ -33,12 +33,6 @@ html {
   background: var(--ultramarine-blue);
 }
 
-body {
-  background: var(--white);
-  margin: auto;
-  overflow: hidden;
-}
-
 /* styling header section */
 
 header {
@@ -119,6 +113,13 @@ section {
   background: #2696e9;
 }
 
+.home .content {
+  z-index: 888;
+  color: #fff;
+  width: 70%;
+  margin-top: 50px;
+}
+
 .home:before {
   z-index: 777;
   content: "";
@@ -148,9 +149,9 @@ section {
   margin-bottom: 65px;
 }
 .home .content a {
-  background: #fff;
+  background: #f3b605;
   padding: 15px 35px;
-  color: #1680ac;
+  color: black;
   font-size: 1.1em;
   font-weight: 500;
   text-decoration: none;
@@ -201,8 +202,112 @@ section {
   width: 100%;
   clip-path: circle(0% at 0 50%);
 }
-.image-slide.active{
+.image-slide.active {
   clip-path: circle(150% at 0 50%);
   transition: 2s ease;
   transition-property: clip-path;
 }
+
+
+.hexagon-section {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+  
+  .hexagon-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+  .hexagons{
+    position: absolute;
+    top: 150px;
+    left: 37%;
+  }
+
+  
+  .hexagon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    color: #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .hexagon span {
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  .hexagon.blue {
+    background: #1a73e8;
+    color: #fff;
+    font-weight: bold;
+  }
+  .blue img{
+    width: 99%;
+    margin-top: 7px;
+  }
+  
+  .hexagon.white {
+    background: #fff;
+    border: 2px solid #ddd;
+    color: #000;
+  }
+  
+  .hexagon:hover {
+    transform: scale(1.1);
+    border-color: #1a73e8;
+  }
+  
+  .hexagon:nth-child(2) {
+    transform: translate(-120px, -70px);
+  }
+  
+  .hexagon:nth-child(3) {
+    transform: translate(0, -140px);
+  }
+  
+  .hexagon:nth-child(4) {
+    transform: translate(120px, -70px);
+  }
+  
+  .hexagon:nth-child(5) {
+    transform: translate(-120px, 70px);
+  }
+  
+  .hexagon:nth-child(6) {
+    transform: translate(0, 140px);
+  }
+  
+  .hexagon:nth-child(7) {
+    transform: translate(120px, 70px);
+  }
+  
+  .hexagon-text {
+    max-width: 400px;
+  }
+  
+  .hexagon-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .hexagon-text p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+  }
