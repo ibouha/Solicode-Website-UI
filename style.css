@@ -703,3 +703,13 @@ section {
   align-items: center;
   justify-content: center;
 }
+#title {
+  color: #f3b605;
+  font-weight: bold;
+  font-size: 40px;
+  width: 100%;
+  display: flex;
+  align-self: flex-start;
+  margin-left: 120px;
+  margin-top: 60px;
+}
