@@ -627,3 +627,79 @@ section {
 .galerieboxes .arrow-left:hover {
   background-color: #082040;
 }
+.general {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.partie1,
+.partie2,
+.partie3 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.partie1 img {
+  width: 30%;
+  max-height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.partie2 img {
+  width: 40%;
+  max-height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.partie3 img {
+  width: 60%;
+  max-height: 200px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.h2 {
+  background-color: #2696e9;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 25px;
+  height: 200px;
+  width: 350px;
+}
+.partie2H2 {
+  flex: 1;
+  background-color: #2696e9;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 25px;
+  height: 200px;
+}
+.partie2 p,
+.partie3 p {
+  flex: 2;
+  color: black;
+  background-color: #f3b605;
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 20px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
